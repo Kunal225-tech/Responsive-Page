@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            color: blue;
+        }  */
+        .boxes *{
+            color: aqua;
+            border: 2px solid black;
+        }
+        .box{
+            font-weight: bolder;
+        }
+        p,a,.box,[data-color = "primary"]{
+            margin-top: 40px;
+        }
+        .box:nth-child(even){
+            background-color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color = "primary"  class="box">Hey i am box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consequatur optio ipsa blanditiis itaque eaque maxime tempora sunt accusamus temporibus? Laborum cupiditate dolore odio itaque velit libero tempora atque sunt.</div>
+        <div class="box">Hey i am box</div>
+        <div class="box">Hey i am box</div>
+    </div>
+</body>
+</html>
